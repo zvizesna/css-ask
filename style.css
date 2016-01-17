@@ -1,0 +1,147 @@
+/***************** hiding, resizing and some necessities ******************/
+
+.askfm-ad-slot, .side-section .streamItem, .side-section > h3, .side-section > p, footer {
+	display: none;
+}
+
+#item-poller, #item-fixer, .streamItem-panel, .item-pager, #searchResults, .top-content, .subTabBar-wide, #profileForm, .twoColumnBody .main-column {
+	 width: 700px;
+}
+
+.searchBar {
+	width: 670px;
+}
+
+.main-column {
+    margin: 0px 0 0 130px;
+}
+
+body[data-id^="wall"] .main-column, body[data-id^="inbox"] .main-column, body[data-id^="friends"] .main-column, body[data-id^="notifications"] .main-column, body[data-id^="likes"] .main-column {
+	margin: 132px 0 0 130px;
+}
+
+body[data-id^="profile"] .top-content {
+	margin: 140px 0 0 130px;
+}
+
+/***************** question and answer forms ******************/
+
+body[data-id^="wall/"] #askForm, body[data-id^="notifications/"] #askForm, body[data-id^="inbox/"] #askForm, body[data-id^="likes/"] #askForm, body[data-id^="friends/"] #askForm {
+	position: absolute;
+    top: 50px;
+    margin-left: -520px;
+    width: 700px;
+    height: 110px;
+    padding-top: 10px;
+    background: #edeef2;
+}
+
+#askForm.new_question {
+	position: static !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    background: none !important;
+}
+
+body[data-id^="profile/"] #askForm.new_question {
+	position: absolute !important;
+    top: 50px !important;
+    margin-left: -520px !important;
+    width: 700px !important;
+    height: 110px !important;
+    padding-top: 10px !important;
+    background: #edeef2 !important;
+}
+
+#askForm textarea, body[data-id^="profile/"] #askForm.new_question textarea {
+	min-height: 40px;
+    max-height: 40px;
+}
+
+body[data-id="questions/new"] #askForm textarea {
+	min-height: 250px;
+    max-height: 500px;
+}
+
+#askForm.new_question textarea {
+	min-height: 80px;
+    max-height: 250px;
+}
+
+#lightboxBody {
+	width: 720px;
+}
+
+/***************** coloring ******************/
+
+body, body.contentBody, #contentArea {
+	background: #ddd;
+    /*font-family: Helvetica;*/
+}
+
+#topMenu, .topBar, .tabBar {
+	background: #255277;
+}
+
+.active, a.tabBarTab.active, .desktop-menu li a.active, .subTabBar-wide a.active {
+	border-bottom: 3px solid #99bb00;
+}
+
+.profileTabBar.subTabBar-wide a div, .btn-secondary, .btn-action {
+	color: #99bb00; 
+}
+
+.btn-primary, .btn-primary-wide, .btn-primary-icon, #newItemsReady, .btn-secondary:hover, .btn-action:hover {
+	background: #99bb00;
+}
+.btn-secondary:hover, .btn-action:hover {
+    border: 2px solid #99bb00;
+}
+
+.askfm-logo, #askBox, .desktop-menu li a, .desktop-menu li a.active, #desktop-menu-icon a {
+	color: #fff;
+}
+
+.desktop-menu li a:hover, #desktop-menu-icon a:hover {
+	color: #ddd;
+}
+
+a, a.questionersName {
+	color: #408db1;
+}
+
+.icon-like.active {
+	border: none;
+}
+
+.viewMore:before, .askfm-ad-slot.loading:before, .gemini-container .loader:before, .visualItemPlayIcon-youTube.loader:before, .visualItemPlayIcon-animatedGif.loader:before {
+	border: 4px solid #99bb00;
+    border-top-color: transparent;
+}
+
+/***************** profile description ******************/
+
+#profileBio {
+    display: block !important;
+}
+
+#profileBio .aboutMore {
+    max-height: none !important;
+    padding-bottom: 1em;
+}
+
+#profileBio .moreButton {
+    display: none !important;
+}
+
+#sidebarBio {
+    display: none !important;
+}
+
+/***************** other ******************/
+
+.main-column {
+    text-align: justify;
+}
