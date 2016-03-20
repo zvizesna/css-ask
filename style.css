@@ -36,46 +36,46 @@ body[data-id^="profile"] .top-content {
 
 body[data-id^="wall/"] #askForm, body[data-id^="notifications/"] #askForm, body[data-id^="inbox/"] #askForm, body[data-id^="likes/"] #askForm, body[data-id^="friends/"] #askForm, body[data-id^="search/"] #askForm {
 	position: absolute;
-	top: 50px;
-	margin-left: -520px;
-	width: 700px;
-	height: 120px;
-	padding-top: 10px;
-	background: #edeef2;
+    top: 50px;
+    margin-left: -520px;
+    width: 700px;
+    height: 120px;
+    padding-top: 10px;
+    background: #edeef2;
 }
 
 #askForm.new_question {
 	position: static !important;
-	margin: 0 !important;
-	width: auto !important;
-	height: auto !important;
-	padding: 0 !important;
-	background: none !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 !important;
+    background: none !important;
 }
 
 body[data-id^="profile/"] #askForm.new_question {
 	position: absolute !important;
-	top: 50px !important;
-	margin-left: -520px !important;
-	width: 700px !important;
-	height: 120px !important;
-	padding-top: 10px !important;
-	background: #edeef2 !important;
+    top: 50px !important;
+    margin-left: -520px !important;
+    width: 700px !important;
+    height: 120px !important;
+    padding-top: 10px !important;
+    background: #edeef2 !important;
 }
 
 #askForm textarea, body[data-id^="profile/"] #askForm.new_question textarea {
 	min-height: 40px;
-	max-height: 40px;
+    max-height: 40px;
 }
 
 body[data-id="questions/new"] #askForm textarea {
 	min-height: 250px;
-	max-height: 500px;
+    max-height: 500px;
 }
 
 #askForm.new_question textarea {
 	min-height: 80px;
-	max-height: 250px;
+    max-height: 250px;
 }
 
 #lightboxBody {
@@ -101,11 +101,16 @@ a.tabBarTab.active, .desktop-menu > a.active, .subTabBar-wide a.active {
 	color: #99bb00 !important; 
 }
 
+.listItemCheckbox.listItemCheckbox-checked:before, .checkbox:checked+label:before {
+    background: #99bb00 !important;
+    border: 1px solid #99bb00 !important;
+}
+
 .btn-primary, .btn-primary-wide, .btn-primary-icon, #newItemsReady, .btn-secondary:hover, .btn-action:hover, lael.icon-like {
 	background: #99bb00 !important;
 }
 .btn-secondary:hover, .btn-action:hover {
-   	border: 2px solid #99bb00 !important;
+    border: 2px solid #99bb00 !important;
 }
 
 .icon-askfm-logo, .askfm-logo, #askBox, .desktop-menu a, .desktop-menu a.active, #desktop-menu-icon a, a.btn-secondary:hover {
@@ -116,21 +121,17 @@ a.tabBarTab.active, .desktop-menu > a.active, .subTabBar-wide a.active {
 	color: #ddd !important;
 }
 
-a.questionersName, .streamItemContent-answer a, .streamItemContent-question a, a.defaultListItem, a.profilePictureSettings-option, body[data-id^="profile/edit"] [class^=simpleForm] a, body[data-id^="services/index"] .socialListItem a {
+a.questionersName, .streamItemContent-answer a, .streamItemContent-question a, a.defaultListItem, a.profilePictureSettings-option, body[data-id^="profile/edit"] [class^=simpleForm] a, body[data-id^="services/index"] .socialListItem a, .aboutMore > p > a {
 	color: #408db1 !important;
 }
 
 .icon-like.active, .desktop-menu a.icon-settings {
-	border-bottom: none !important;
-}
-
-.desktop-menu nav {
-	border-top: none !important;
+	border-bottom:  1px solid #255277 !important;
 }
 
 .viewMore:before, .askfm-ad-slot.loading:before, .gemini-container .loader:before, .visualItemPlayIcon-youTube.loader:before, .visualItemPlayIcon-animatedGif.loader:before {
 	border: 4px solid #99bb00 !important;
-	border-top-color: transparent !important;
+    border-top-color: transparent !important;
 }
 
 /***************** profile description ******************/
