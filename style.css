@@ -21,7 +21,7 @@
 }
 
 body[data-id^="wall"] .main-column, body[data-id^="inbox"] .main-column, body[data-id^="friends"] .main-column, body[data-id^="notifications"] .main-column, body[data-id^="likes"] .main-column, body[data-id^="search"] .main-column {
-	margin: 142px 0 0 130px;
+	margin: 147px 0 0 130px;
 }
 
 body[data-id="notifications/edit"] .main-column {
@@ -29,19 +29,27 @@ body[data-id="notifications/edit"] .main-column {
 }
 
 body[data-id^="profile"] .top-content {
-	margin: 150px 0 0 130px;
+	margin: 185px 0 0 130px;
 }
 
 /***************** question and answer forms ******************/
 
 body[data-id^="wall/"] #askForm, body[data-id^="notifications/"] #askForm, body[data-id^="inbox/"] #askForm, body[data-id^="likes/"] #askForm, body[data-id^="friends/"] #askForm, body[data-id^="search/"] #askForm {
-	position: absolute;
-    top: 50px;
-    margin-left: -520px;
-    width: 700px;
-    height: 120px;
-    padding-top: 10px;
-    background: #edeef2;
+	position: absolute !important;
+    width: inherit !important;
+    height: inherit !important;
+    padding-top: 15px !important;
+    background: #edeef2 !important;
+}
+
+body[data-id^="wall/"] div.side-section.ask-box, body[data-id^="notifications/"] div.side-section.ask-box, body[data-id^="inbox/"] div.side-section.ask-box, body[data-id^="likes/"] div.side-section.ask-box, body[data-id^="friends/"] div.side-section.ask-box, body[data-id^="search/"] div.side-section.ask-box {
+    display: block;
+    position: absolute !important;
+    top: 50px !important;
+    margin-left: -520px !important;
+    width: 700px !important;
+    height: 120px !important;
+    padding: 0px !important;
 }
 
 #askForm.new_question {
@@ -55,12 +63,20 @@ body[data-id^="wall/"] #askForm, body[data-id^="notifications/"] #askForm, body[
 
 body[data-id^="profile/"] #askForm.new_question {
 	position: absolute !important;
+    width: inherit !important;
+    height: inherit !important;
+    padding-top: 15px !important;
+    background: #edeef2 !important;
+}
+
+body[data-id^="profile/"] div.side-section.ask-box {
+    display: block !important;
+    position: absolute !important;
     top: 50px !important;
     margin-left: -520px !important;
     width: 700px !important;
-    height: 120px !important;
-    padding-top: 10px !important;
-    background: #edeef2 !important;
+    height: 150px !important;
+    padding: 0px !important;
 }
 
 #askForm textarea, body[data-id^="profile/"] #askForm.new_question textarea {
@@ -97,7 +113,7 @@ a.tabBarTab.active, .desktop-menu > a.active, .subTabBar-wide a.active {
 	border-bottom: 3px solid #99bb00 !important;
 }
 
-.profileTabBar.subTabBar-wide a div, .btn-secondary, .btn-action {
+.profileTabBar.subTabBar-wide a div, .btn-secondary, .btn-action, .streamItemContent.streamItemContent-heading {
 	color: #99bb00 !important; 
 }
 
@@ -106,7 +122,7 @@ a.tabBarTab.active, .desktop-menu > a.active, .subTabBar-wide a.active {
     border: 1px solid #99bb00 !important;
 }
 
-.btn-primary, .btn-primary-wide, .btn-primary-icon, #newItemsReady, .btn-secondary:hover, .btn-action:hover, lael.icon-like {
+.btn-primary, .btn-primary-wide, .btn-primary-icon, #newItemsReady, .btn-secondary:hover, .btn-action:hover {
 	background: #99bb00 !important;
 }
 .btn-secondary:hover, .btn-action:hover {
@@ -121,7 +137,7 @@ a.tabBarTab.active, .desktop-menu > a.active, .subTabBar-wide a.active {
 	color: #ddd !important;
 }
 
-a.questionersName, .streamItemContent-answer a, .streamItemContent-question a, a.defaultListItem, a.profilePictureSettings-option, body[data-id^="profile/edit"] [class^=simpleForm] a, body[data-id^="services/index"] .socialListItem a, .aboutMore > p > a {
+a.questionersName, .streamItemContent-answer a, .streamItemContent-answer_old a, .streamItemContent-question a, a.defaultListItem, .defaultListItem-overflow, a.profilePictureSettings-option, body[data-id^="profile/edit"] [class^=simpleForm] a, body[data-id^="services/index"] .socialListItem a, .aboutMore > p > a, .profile-bio a {
 	color: #408db1 !important;
 }
 
@@ -136,20 +152,24 @@ a.questionersName, .streamItemContent-answer a, .streamItemContent-question a, a
 
 /***************** profile description ******************/
 
-#profileBio {
+.profile-bio {
     display: block !important;
 }
 
-#profileBio .aboutMore {
+.profile-bio .aboutMore {
     max-height: none !important;
     padding-bottom: 1em;
 }
 
-#profileBio .moreButton {
+.profile-bio .moreButton {
     display: none !important;
 }
 
-#sidebarBio {
+.profile-bio a.btn-primary-wide {
+	display: none !important;
+}
+
+.sidebar-bio {
     display: none !important;
 }
 
